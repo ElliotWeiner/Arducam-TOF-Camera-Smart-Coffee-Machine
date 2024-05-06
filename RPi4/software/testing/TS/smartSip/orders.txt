@@ -1,0 +1,2 @@
+Coffee:10
+Milk:58
