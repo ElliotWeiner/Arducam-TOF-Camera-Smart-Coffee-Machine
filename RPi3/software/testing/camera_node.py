@@ -152,7 +152,7 @@ def get_rim(laserScan, rad):
 def get_height(laserScan, value, idx):
     # calculate theta
     center_offset = abs(len(laserScan)/2 - idx)
-    theta = math.atan(center_offset / 146.5) # 171 derived from given image dimensions ad 70 degree view
+    theta = math.atan(center_offset / 225.69) #  derived from given image dimensions (240 x 180) and 70 diagonal degree view
 
     # height
     height  = value * math.cos(theta)
@@ -164,8 +164,8 @@ def get_radius(laserScan, val1, val2, idx1, idx2):
     # calculate thetas
     offset1 = abs(len(laserScan)/2 - idx1)
     offset2 = abs(len(laserScan)/2 - idx2)
-    theta1 = math.atan(offset1 / 190)
-    theta2 = math.atan(offset2 / 190)
+    theta1 = math.atan(offset1 / 225.69)
+    theta2 = math.atan(offset2 / 225.69)
     
     # diameter
     diameter = val1 * math.sin(theta1) + val2 * math.sin(theta2)

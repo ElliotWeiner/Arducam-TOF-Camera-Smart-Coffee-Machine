@@ -6,6 +6,15 @@
 #   They use smbus to communicate via I2C protocol.
 #
 
+# Commands:
+# 0 to stop Gantry
+# 1 to move Gantry left
+# 2 to move Gantry right
+# 3 to open solenoid 1
+# 4 to open solenoid 2
+# 5 to open solenoid 3
+# 6 to open solenoid 4
+# 7 to turn off all solenoids
 
 import smbus
 

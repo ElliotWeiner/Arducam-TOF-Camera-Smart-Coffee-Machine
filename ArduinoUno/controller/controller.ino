@@ -1,3 +1,11 @@
+// Author: Elliot Weiner
+// Date: 04 / 03 / 2024
+// Organization: University of Rochester Electrical and Computer Engineering Department
+// Description:
+//   This code allows the Arduino Uno to function as a hardware controller. It takes in commands from an I2C communication channel with
+//   the Raspberry Pi 4 and translates them into actual motor control. Pinouts can be derived from the following set of pin initializations.
+//
+
 #include <Wire.h>
 #include <Stepper.h>
 
